@@ -1,0 +1,35 @@
+MainNotesFile = []
+outputFile = open("Notes.txt", "w")
+
+
+print("What file would you like to open?")
+fileName = input("File name:") #name of file script will try to find to open
+
+while outputFile != fileName: #while this file does not exist
+    tempNotes = []
+    newNotes = input("File does not exist, write new notes here:") #follow directions
+    print(newNotes) #view notes that were written
+    #put notes in a temporary space to hold
+
+
+    tempNotes.append(newNotes) #append new notes to tempNotes
+    print(tempNotes)
+    tempNotes.append(outputFile)
+    print(outputFile)
+
+open(outputFile)
+
+
+    # for notes in MainNotesFile:
+    #     for data in notes:
+    #         outputFile.write(str(data))
+    #         outputFile.write(" ")
+    # outputFile.write(fileName)
+
+
+# else:
+#     open(outputFile)
+#
+
+
+
