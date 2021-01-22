@@ -1,12 +1,4 @@
-'''https://github.com/cpbride/Pirple/blob/main/Pirple_PythonIsEasy_Connect4.py
-This is supposed to be a simple Connect 4 simulator. When I run this code (and it is 
-not in its finished form, but I can't get it to do something simple), the row/column 
-allocation when I take a turn does not make sense. For example, choosing r0/c0 will 
-populate cells r0c0 through r0c3. Multiple spaces are populated sometimes, and other 
-times nothing happens. But when I try to populate a space twice, it returns that 
-the space is occupied even though it does not show up in the grid. This was copied
-and augmented from a TicTacToe script, so I was thinking that it should behave in a 
-similar fashion at this point, but it does not'''
+
 
 def drawField(field):
     for row in range(11):
@@ -14,7 +6,7 @@ def drawField(field):
             practicalRow = int(row/2)
             for column in range(13):
                 if column % 2 == 0:
-                    practicalColumn = int(column/8)
+                    practicalColumn = int(column/2)
                     if column != 12:
                         print(field[practicalColumn][practicalRow], end="")
                     else:
